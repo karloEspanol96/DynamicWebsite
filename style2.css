@@ -110,7 +110,7 @@
 }
 
 .register-form > .btn-form{
-    width: fit-content;
+    width: 90%;
     margin: auto;
     justify-content: center;
 }
@@ -242,8 +242,45 @@ input[type=reset]{
         background: rgba(5, 131, 131, 0.808);
         font-size: 1.1rem;
     }
+    .register-form > .row > .col-1 > input{
+        padding: 10px;
+      border: none;
+      border-bottom: 1px rgb(6, 200, 214) solid;
+      width: 60% !important;
+      margin: 10px auto;
+      background: #fff;
+    }
+
+    .col-2 > input[name="area"], .col-2 > input[name="city"], .col-2 > input[name="country"]{
+        padding: 10px;
+        border: none;
+        border-bottom: 1px rgb(6, 200, 214) solid;
+        width: 60% !important;
+        margin: 10px auto;
+        background: #fff;
+    }
 
     
+}
+
+@media(max-width: 600px){
+    .register-form > .row > .col-1 > input{
+        padding: 10px;
+      border: none;
+      border-bottom: 1px rgb(6, 200, 214) solid;
+      width: 100%;
+      margin: 10px auto;
+      background: #fff;
+    }
+}
+
+.col-2 > input[name="area"], .col-2 > input[name="city"], .col-2 > input[name="country"]{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px rgb(6, 200, 214) solid;
+    width: 100%;
+    margin: 10px auto;
+    background: #fff;
 }
 
 
@@ -271,15 +308,12 @@ input[type=reset]{
         background: #fff;
         
     }
-}
-
-@media(max-width: 400px){
 
     .register-form > .row > .col-1 > input{
         padding: 10px;
       border: none;
       border-bottom: 1px rgb(6, 200, 214) solid;
-      width: 100%;
+      width: 100% !important;
       margin: 10px auto;
       background: #fff;
     }
@@ -288,8 +322,43 @@ input[type=reset]{
         padding: 10px;
         border: none;
         border-bottom: 1px rgb(6, 200, 214) solid;
-        width: 100%;
+        width: 100% !important;
         margin: 10px auto;
         background: #fff;
+    }
+
+}
+
+@media(max-width: 400px){
+
+    
+    #submit-btn{
+        padding: 8px ;
+        width: 100%;
+        margin: 40px auto;
+        border:none;
+        color: #fff;
+        background: rgba(5, 131, 131, 0.808);
+        font-size: 1.1rem;
+    }
+    
+    #exit-submit{
+        padding: 8px ;
+        width: 100%;
+        margin: 40px auto;
+        border:none;
+        color: #fff;
+        background: rgba(5, 131, 131, 0.808);
+        font-size: 1.1rem;
+    }
+    
+    input[type=reset]{
+        padding: 8px ;
+        width: 100%;
+        margin: 40px auto;
+        border:none;
+        color: #fff;
+        background: rgba(5, 131, 131, 0.808);
+        font-size: 1.1rem;
     }
 }
