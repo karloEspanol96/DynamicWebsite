@@ -97,31 +97,29 @@ signInForm.addEventListener("submit", onSignInSubmit);
 function onSignInSubmit(e) {
   e.preventDefault();
   const {username, password} = tempStore[0];
-  let con;
+  let con = 1;
  state.person.map(m => {
-  if(username == m.username && password == m.password ){
-    con = 1;
-
-    if(con = state.person.length){
-      document.getElementById('form-warning-1').style.display = 'block'
-    }
-    if(con = 1){
-      
-        document.getElementById('form-warning-1').style.display = 'none'
-        const nick = `
-      <h1>Hi There !</h1>
-      <h1>${tempStore[tempStore.length - 1].username}</h1>
-      <a href="./index2.html">Continue ---></a>
-      `
-         document.getElementById('welcome').innerHTML = nick;
-         welcomeModal.style.display = "block";
-      console.log(state.person);
-      console.log(tempStore);
-      
-      
-    }
+  if(username != m.username && password != m.pass){
     
+    document.getElementById('form-warning-1').style.display = 'block'
    }
+
+   else{
+      
+    document.getElementById('form-warning-1').style.display = 'none'
+    const nick = `
+  <h1>Hi There !</h1>
+  <h1>${tempStore[tempStore.length - 1].username}</h1>
+  <a href="./index2.html">Continue ---></a>
+  `
+     document.getElementById('welcome').innerHTML = nick;
+     welcomeModal.style.display = "block";
+     document.getElementById('form-warning-1').style.display = 'block'
+  console.log(state.person);
+  console.log(tempStore);
+  
+  
+}
   
    
     
